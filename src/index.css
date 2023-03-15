@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background: #e91b48;
+}
+body::-webkit-scrollbar-thumb {
+  background: #7a3737;
+}
+
+/* tech stack */
+.technologies {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-h {
+  font-weight: 700;
+  font-size: 1.7em;
+}
+.tech-list {
+  display: flex;
+}
+.list-container {
+  width: 5em;
+  margin: 1em;
+  text-align: center;
+}
+.list-img {
+  width: 3em;
+  height: 3em;
+}
+
+/* 1280 SCREEN SIZE */
+@media all and (max-width: 1280px) {
+  /* NAVLINK */
+  .nav-link {
+    font-size: 1em;
+  }
+
+  /* ABOUT */
+  .my-img {
+    width: 18em;
+    height: 18em;
+  }
+  .intro-h {
+    font-size: 3.3em;
+  }
+  .intro-p {
+    font-size: 2em;
+  }
+}
