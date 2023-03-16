@@ -9,16 +9,13 @@ import flashcardoImg from "../../assets/flaschardo1.png";
 import lolChampsImg from "../../assets/lolchamps.png";
 import instaCloneImg from "../../assets/instaclone.png";
 import lepBojosImg from "../../assets/lepitenbojos.png";
+import sergdleImg from "../../assets/sergdle.png";
 
-// const projLink4 = {
-//   site: "https://pokemau.github.io/Instagram-Clone/",
-//   ghLink: "https://github.com/pokemau/Instagram-Clone",
-// };
 // const projLink5 = "https://lepitenbojos.org/";
 
 const projects = [
   {
-    id: "proj-1",
+    id: "chat-site",
     name: "Chat Site",
     site: "https://yahallo.vercel.app/",
     desc: "A webapp where I used NextJS for the frontend and Firebase for the backend. The user can login through Firebase's built-in Google authentication, and can send messages in a public chatroom. The site has realtime updates whenever other users send a message.",
@@ -37,7 +34,7 @@ const projects = [
   },
 
   {
-    id: "proj-2",
+    id: "flashcardo",
     name: "Flashcardo",
     site: "https://flashcardo.vercel.app/",
     desc: "A flashcard app where it can be used by the user to quiz themselves when studying for an upcoming quiz or exam. It utilizes the browser's local storage to store the flashcard sets which can then be viewed or can be deleted by the user.",
@@ -56,7 +53,7 @@ const projects = [
   },
 
   {
-    id: "proj-3",
+    id: "lol-champs",
     name: "LOL Champa",
     site: "https://lolchamps-dusky.vercel.app/",
     techUsed: ["REACTJS", "HTML", "CSS"],
@@ -73,12 +70,26 @@ const projects = [
     ],
     img: lolChampsImg,
   },
-
-  // {
-
-  // },
   {
-    id: "proj-5",
+    id: "sergdle",
+    name: "Sergdle",
+    site: "https://sergdle.vercel.app/",
+    techUsed: ["TYPESCRIPT", "TAILWIND"],
+    desc: "Wordle clone",
+    links: [
+      {
+        site: "https://github.com/pokemau/sergdle",
+        icon: ghLogo,
+      },
+      {
+        site: "https://sergdle.vercel.app/",
+        icon: goToIcon,
+      },
+    ],
+    img: sergdleImg,
+  },
+  {
+    id: "lawfirm-site",
     name: "Law Firm Website",
     site: "https://lepitenbojos.org/",
     techUsed: ["WORDPRESS"],
@@ -86,7 +97,29 @@ const projects = [
     links: [{ site: "https://lepitenbojos.org/", icon: goToIcon }],
     img: lepBojosImg,
   },
+  {
+    id: "insta-clone",
+    name: "Instagram Clone",
+    site: "https://pokemau.github.io/Instagram-Clone/",
+    techUsed: ["JAVASCRIPT", "HTML", "CSS"],
+    desc: "A simple site made with plain CSS and HTML to apply my skills on following a given template or design for a website.",
+    links: [
+      {
+        site: "https://github.com/pokemau/Instagram-Clone",
+        icon: ghLogo,
+      },
+      {
+        site: "https://pokemau.github.io/Instagram-Clone/",
+        icon: goToIcon,
+      },
+    ],
+    img: instaCloneImg,
+  },
 ];
+// const projLink4 = {
+//   site: "https://pokemau.github.io/Instagram-Clone/",
+//   ghLink: "https://github.com/pokemau/Instagram-Clone",
+// };
 
 const Projects = () => {
   return (
