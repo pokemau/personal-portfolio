@@ -75,7 +75,7 @@ const projects = [
     name: "Sergdle",
     site: "https://sergdle.vercel.app/",
     techUsed: ["TYPESCRIPT", "TAILWIND"],
-    desc: "Wordle clone",
+    desc: "Sergdle is a Wordle clone, where the player has to guess the hidden word within 6 guesses to win the game.",
     links: [
       {
         site: "https://github.com/pokemau/sergdle",
@@ -116,10 +116,6 @@ const projects = [
     img: instaCloneImg,
   },
 ];
-// const projLink4 = {
-//   site: "https://pokemau.github.io/Instagram-Clone/",
-//   ghLink: "https://github.com/pokemau/Instagram-Clone",
-// };
 
 const Projects = () => {
   return (
