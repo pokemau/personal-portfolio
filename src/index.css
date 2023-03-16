@@ -45,6 +45,22 @@ body::-webkit-scrollbar-thumb {
   height: 3em;
 }
 
+/* greater than 1366 px */
+@media all and (min-width: 1367px) {
+  .App {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar,
+  .site-footer {
+    width: 100%;
+  }
+}
+
 /* 1280 SCREEN SIZE */
 @media all and (max-width: 1280px) {
   /* NAVLINK */

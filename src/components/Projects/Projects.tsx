@@ -11,8 +11,6 @@ import instaCloneImg from "../../assets/instaclone.png";
 import lepBojosImg from "../../assets/lepitenbojos.png";
 import sergdleImg from "../../assets/sergdle.png";
 
-// const projLink5 = "https://lepitenbojos.org/";
-
 const projects = [
   {
     id: "chat-site",
