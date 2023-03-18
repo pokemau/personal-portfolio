@@ -54,7 +54,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar,
   .site-footer {
     width: 100%;

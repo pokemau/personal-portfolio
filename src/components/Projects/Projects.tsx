@@ -16,7 +16,7 @@ const projects = [
     id: "chat-site",
     name: "Chat Site",
     site: "https://yahallo.vercel.app/",
-    desc: "A webapp where I used NextJS for the frontend and Firebase for the backend. The user can login through Firebase's built-in Google authentication, and can send messages in a public chatroom. The site has realtime updates whenever other users send a message.",
+    desc: "A webapp with NextJS for the frontend and Firebase for the backend. The user can login through Firebase's built-in Google authentication. Users can send messages in a public chatroom with realtime updates",
     techUsed: ["NEXTJS", "FIREBASE", "TAILWIND"],
     links: [
       {
@@ -35,7 +35,7 @@ const projects = [
     id: "flashcardo",
     name: "Flashcardo",
     site: "https://flashcardo.vercel.app/",
-    desc: "A flashcard app where it can be used by the user to quiz themselves when studying for an upcoming quiz or exam. It utilizes the browser's local storage to store the flashcard sets which can then be viewed or can be deleted by the user.",
+    desc: "A website for making flashcards to help the user study for an upcoming quiz or exam. It uses the browser's local storage to store the flashcard sets which can be deleted by the user.",
     techUsed: ["NEXTJS", "TAILWIND", "HTML"],
     links: [
       {
@@ -55,7 +55,7 @@ const projects = [
     name: "LOL Champa",
     site: "https://lolchamps-dusky.vercel.app/",
     techUsed: ["REACTJS", "HTML", "CSS"],
-    desc: "A web app made with ReactJS which shows the basic information of a champion in the famous MOBA game League of Legends. The static data is downloaded from Riot Games' data dragon.",
+    desc: "A web app made with ReactJS which shows the basic information of a champion in the famous MOBA game League of Legends. The champion data is fetched from Riot Games's Data Dragon API.",
     links: [
       {
         site: "https://github.com/pokemau/React-LOL-Champs",
@@ -99,7 +99,7 @@ const projects = [
     id: "insta-clone",
     name: "Instagram Clone",
     site: "https://pokemau.github.io/Instagram-Clone/",
-    techUsed: ["JAVASCRIPT", "HTML", "CSS"],
+    techUsed: ["HTML", "CSS"],
     desc: "A simple site made with plain CSS and HTML to apply my skills on following a given template or design for a website.",
     links: [
       {
