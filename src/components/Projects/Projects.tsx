@@ -24,7 +24,7 @@ const projects = [
         icon: ghLogo,
       },
       {
-        site: "https://github.com/pokemau/Chat-App",
+        site: "https://yahallo.vercel.app/",
         icon: goToIcon,
       },
     ],
@@ -98,16 +98,16 @@ const projects = [
   {
     id: "insta-clone",
     name: "Instagram Clone",
-    site: "https://pokemau.github.io/Instagram-Clone/",
+    site: "https://pokemau.github.io/instagram-clone/",
     techUsed: ["HTML", "CSS"],
     desc: "A simple site made with plain CSS and HTML to apply my skills on following a given template or design for a website.",
     links: [
       {
-        site: "https://github.com/pokemau/Instagram-Clone",
+        site: "https://github.com/pokemau/instagram-clone",
         icon: ghLogo,
       },
       {
-        site: "https://pokemau.github.io/Instagram-Clone/",
+        site: "https://pokemau.github.io/instagram-clone/",
         icon: goToIcon,
       },
     ],
