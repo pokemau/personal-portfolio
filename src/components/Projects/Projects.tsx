@@ -98,12 +98,12 @@ const projects = [
   {
     id: "insta-clone",
     name: "Instagram Clone",
-    site: "https://pokemau.github.io/instagram-clone/",
+    site: "/",
     techUsed: ["HTML", "CSS"],
     desc: "A simple site made with plain CSS and HTML to apply my skills on following a given template or design for a website.",
     links: [
       {
-        site: "https://github.com/pokemau/instagram-clone",
+        site: "https://github.com/pokemau/Instagram-Clone",
         icon: ghLogo,
       },
       {
