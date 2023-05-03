@@ -122,9 +122,13 @@ const Projects = () => {
       <div className="projects-list">
         {projects.map((proj) => {
           return (
-            <div className="project">
+            <div className="project" key={proj.id}>
               <div className="proj-info-cont">
-                <a href={proj.site} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={proj.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={proj.img}
                     alt={`${proj.name} img`}
@@ -138,16 +142,22 @@ const Projects = () => {
 
               <div className="tech-used">
                 {proj.techUsed?.map((tech) => (
-                  <p>{tech}</p>
+                  <p key={tech}>{tech}</p>
                 ))}
 
                 <div className="redirect-links-container">
                   {proj.links.map((link) => (
                     <a
+                      key={link.icon}
                       href={link.site}
                       target="_blank"
-                      rel="noopener noreferrer">
-                      <img src={link.icon} alt="" className="redirect-img" />
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={link.icon}
+                        alt=""
+                        className="redirect-img"
+                      />
                     </a>
                   ))}
                 </div>

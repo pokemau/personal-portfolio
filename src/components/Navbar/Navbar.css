@@ -1,79 +1,88 @@
 .navbar {
   display: flex;
   align-items: center;
-  min-height: 4em;
-  padding: 0 2em 0 2em;
-  border-bottom: 2px solid rgb(235, 230, 230);
+  justify-content: space-between;
+  padding: 0.5rem 2.3rem;
+  min-height: 4rem;
+  width: 100vw;
+  border-bottom: 2px solid rgb(240, 240, 240);
 }
+
 .nav-logo {
   font-weight: 800;
   font-size: 2.1em;
   cursor: pointer;
   color: #e91b48;
 }
-.nav-links {
+
+.nav-links ul {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  list-style-type: none;
 }
-.nav-link {
-  text-decoration: none;
-  color: black;
+.nav-links li {
+  padding: 0;
+  margin: 0;
+}
+.nav-links li a {
   cursor: pointer;
-  font-size: 1.1em;
-  margin: 0.2em;
-  display: flex;
-  height: 2em;
-  align-items: center;
-  padding: 0 0.4em 0 0.4em;
-  transition: 0.1s;
   border-radius: 5px;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  padding: 0.5rem;
 }
-.nav-link:hover {
-  background-color: rgb(243, 237, 248);
-}
-.nav-links > .active {
-  background-color: orange;
+.nav-links li a:hover {
+  background-color: rgb(243, 243, 243);
 }
 
-.hamburger-container {
+.toggle-nav {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
   display: none;
-  width: 2em;
+  cursor: pointer;
 }
-.hamburger-icon {
-  width: 2em;
+.toggle-nav img {
+  width: 2rem;
 }
 
-@media all and (max-width: 630px) {
+.mobile-nav {
+  text-align: center;
+  border-radius: 5px;
+  scale: 0;
+  transition: 0.1s ease-in-out;
+  transform-origin: 88% 0%;
+  position: absolute;
+  right: 1.5rem;
+  top: 4.2rem;
+  width: 50%;
+  background-color: rgb(231, 231, 231);
+}
+.mobile-nav ul {
+  list-style-type: none;
+}
+.mobile-nav ul li a {
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: block;
+  cursor: pointer;
+}
+.mobile-nav ul li a:active {
+  background-color: rgb(212, 212, 212);
+}
+.mobile-nav.active {
+  scale: 1;
+}
+
+@media all and (max-width: 480px) {
   .navbar {
-    flex-direction: column;
     align-items: flex-start;
-    width: 98vw;
-    padding: 0.8em;
-    margin: auto;
+    justify-content: center;
+    flex-direction: column;
   }
   .nav-links {
     display: none;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
   }
-  .nav-link {
-    justify-content: center;
-    width: 100%;
-    background-color: rgb(219, 219, 219);
-  }
-  .hamburger-container {
+  .toggle-nav {
     display: flex;
-    position: absolute;
-    top: 1em;
-    right: 1em;
-  }
-
-  .active-hamburger {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
   }
 }

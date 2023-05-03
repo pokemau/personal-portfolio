@@ -1,51 +1,99 @@
 import { Link } from "react-scroll";
-import { useRef } from "react";
+import { useEffect, useRef, useState, MouseEvent } from "react";
 
 // images
 import hamburger from "../../assets/hamburger.png";
 
 import "./Navbar.css";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const navLinkRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  function showNav() {
-    if (navLinkRef.current)
-      navLinkRef.current.classList.toggle("active-hamburger");
-  }
+  const hideMobileNav = () => {
+    navLinkRef.current?.classList.remove("active");
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const winWidth = window.innerWidth;
+      if (winWidth <= 480) setIsMobile(true);
+    };
+    window.addEventListener("resize", handleResize);
+
+    const handleClickOnSite = (e: globalThis.MouseEvent) => {
+      const el = e.target as HTMLElement;
+      const target = el.className;
+
+      if (target !== "toggle-nav-img") {
+        hideMobileNav();
+      }
+    };
+    window.addEventListener("click", (e) => handleClickOnSite(e));
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("click", (e) => handleClickOnSite(e));
+    };
+  }, []);
+
+  const showMobileNav = () => {
+    if (navLinkRef.current) {
+      navLinkRef.current.classList.toggle("active");
+    }
+  };
 
   return (
     <nav className="navbar">
       <h1 className="nav-logo">MT</h1>
-      <div className="nav-links" ref={navLinkRef}>
-        <Link
-          to="about"
-          className="nav-link"
-          smooth={true}
-          offset={-25}
-          duration={200}>
-          About
-        </Link>
-        <Link
-          to="projects"
-          className="nav-link"
-          smooth={true}
-          offset={-15}
-          duration={400}>
-          Projects
-        </Link>
-        <Link
-          to="contact"
-          className="nav-link"
-          smooth={true}
-          offset={50}
-          duration={500}>
-          Contact
-        </Link>
+      <div
+        ref={navLinkRef}
+        className={`${isMobile ? "nav-links" : "mobile-nav"}`}
+      >
+        <ul>
+          <li>
+            <Link
+              onClick={hideMobileNav}
+              to="about"
+              smooth={true}
+              offset={-25}
+              duration={200}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={hideMobileNav}
+              to="projects"
+              smooth={true}
+              offset={-15}
+              duration={400}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={hideMobileNav}
+              to="contact"
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
 
-      <div onClick={showNav} className="hamburger-container">
-        <img className="hamburger-icon" src={hamburger} alt="hamburger icon" />
+      <div className="toggle-nav">
+        <img
+          onClick={showMobileNav}
+          src={hamburger}
+          className="toggle-nav-img"
+          alt="hamburger icon"
+        />
       </div>
     </nav>
   );
