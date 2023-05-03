@@ -5,7 +5,6 @@ import { useEffect, useRef, useState, MouseEvent } from "react";
 import hamburger from "../../assets/hamburger.png";
 
 import "./Navbar.css";
-import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const navLinkRef = useRef<HTMLDivElement>(null);
@@ -16,9 +15,13 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    if (window.innerWidth <= 480) {
+      setIsMobile(true);
+    }
     const handleResize = () => {
       const winWidth = window.innerWidth;
       if (winWidth <= 480) setIsMobile(true);
+      else setIsMobile(false);
     };
     window.addEventListener("resize", handleResize);
 
@@ -48,7 +51,7 @@ const Navbar = () => {
       <h1 className="nav-logo">MT</h1>
       <div
         ref={navLinkRef}
-        className={`${isMobile ? "nav-links" : "mobile-nav"}`}
+        className={`${isMobile ? "mobile-nav" : "nav-links"}`}
       >
         <ul>
           <li>
