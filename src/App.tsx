@@ -4,14 +4,16 @@ import Contact from "./components/Contact/Contact";
 import SiteFooter from "./components/Footer/SiteFooter";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Techstack from "./components/Techstack/Techstack";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
 
-      {/* <Home />
-      <About />
+      <Home />
+
+      {/* <About />
       <Projects />
       <Contact />
       <SiteFooter /> */}
