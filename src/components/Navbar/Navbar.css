@@ -37,7 +37,7 @@
 .toggle-nav {
   position: absolute;
   top: 1rem;
-  right: 1.5rem;
+  right: 1rem;
   display: none;
   cursor: pointer;
 }
@@ -52,7 +52,7 @@
   transition: 0.1s ease-in-out;
   transform-origin: 88% 0%;
   position: absolute;
-  right: 1.5rem;
+  right: 1rem;
   top: 4.2rem;
   width: 50%;
   background-color: rgb(231, 231, 231);
@@ -78,6 +78,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;
   }
   .nav-links {
     display: none;
