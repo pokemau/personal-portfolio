@@ -22,17 +22,16 @@ const Projects = () => {
                     className="proj-img"
                   />
                 </a>
-
-                <h1 className="proj-title">{proj.name}</h1>
+                <h2 className="proj-name">{proj.name}</h2>
                 <p className="proj-desc">{proj.desc}</p>
               </div>
-
-              <div className="tech-used">
-                {proj.techUsed?.map((tech) => (
-                  <p key={tech}>{tech}</p>
-                ))}
-
-                <div className="redirect-links-container">
+              <div className="proj-tech-links-cont">
+                <div className="tech-used">
+                  {proj.techUsed?.map((tech) => (
+                    <p key={tech}>{tech}</p>
+                  ))}
+                </div>
+                <div className="links-cont">
                   {proj.links.map((link) => (
                     <a
                       key={link.icon}
@@ -42,8 +41,8 @@ const Projects = () => {
                     >
                       <img
                         src={link.icon}
-                        alt=""
-                        className="redirect-img"
+                        alt={link.icon}
+                        className="link-img"
                       />
                     </a>
                   ))}

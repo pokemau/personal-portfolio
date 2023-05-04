@@ -27,10 +27,3 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #7a3737;
 }
-
-@media all and (min-width: 1920px) {
-  .App {
-    width: 90vw;
-    margin: auto;
-  }
-}

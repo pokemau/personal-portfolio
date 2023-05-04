@@ -59,7 +59,7 @@ const Navbar = () => {
               onClick={hideMobileNav}
               to="about"
               smooth={true}
-              offset={-25}
+              offset={-50}
               duration={200}
             >
               About
@@ -70,7 +70,7 @@ const Navbar = () => {
               onClick={hideMobileNav}
               to="projects"
               smooth={true}
-              offset={-15}
+              offset={-60}
               duration={400}
             >
               Projects

@@ -2,7 +2,7 @@
   width: 100%;
   margin: auto;
   display: flex;
-  padding: 1rem 4rem 6rem 4rem;
+  padding: 6rem 4rem 6rem 4rem;
   align-items: center;
   flex-direction: column;
   background-color: rgb(245, 245, 245);
@@ -10,15 +10,14 @@
 
 .all-info-cont {
   display: flex;
-  /* width: 70%; */
   max-width: 60rem;
   background-color: rgb(245, 245, 245);
 }
 
 .my-img {
   width: 90vw;
-  max-width: 20rem;
-  max-height: 20rem;
+  max-width: 25rem;
+  max-height: 25rem;
   border-radius: 10px;
   margin-right: 1.5rem;
 }
@@ -45,7 +44,7 @@
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: 100;
-  color: rgb(80, 80, 80);
+  color: #767676;
 }
 
 .socials-cont {
@@ -81,7 +80,7 @@
 
 @media all and (max-width: 420px) {
   .home-cont {
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 6rem 4rem 2rem 4rem;
   }
   .intro-title {
     flex-direction: column;
