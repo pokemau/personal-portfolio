@@ -13,8 +13,8 @@ function App() {
       <Home />
       <About />
       <Projects />
-      {/* <Contact /> */}
-      {/* <SiteFooter /> */}
+      <Contact />
+      <SiteFooter />
     </div>
   );
 }
