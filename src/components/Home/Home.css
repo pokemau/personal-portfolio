@@ -1,7 +1,8 @@
 .home-cont {
   width: 100%;
+  margin: auto;
   display: flex;
-  padding: 1rem 4rem;
+  padding: 1rem 4rem 6rem 4rem;
   align-items: center;
   flex-direction: column;
   background-color: rgb(245, 245, 245);
@@ -9,10 +10,13 @@
 
 .all-info-cont {
   display: flex;
+  /* width: 70%; */
+  max-width: 60rem;
+  background-color: rgb(245, 245, 245);
 }
 
 .my-img {
-  width: 80vw;
+  width: 90vw;
   max-width: 20rem;
   max-height: 20rem;
   border-radius: 10px;
@@ -23,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 .intro-title h2 {
   font-size: 4rem;
@@ -30,6 +35,9 @@
   color: rgb(34, 104, 211);
 }
 .intro-title img {
+  position: absolute;
+  right: 35%;
+  top: 55%;
   width: 3.7rem;
   height: 3.7rem;
 }
@@ -72,6 +80,9 @@
 }
 
 @media all and (max-width: 420px) {
+  .home-cont {
+    padding: 2rem 4rem 2rem 4rem;
+  }
   .intro-title {
     flex-direction: column;
     gap: 0;
@@ -79,9 +90,5 @@
   }
   .intro-title h2 {
     font-size: 3rem;
-  }
-  .intro-title img {
-    width: 2rem;
-    height: 2rem;
   }
 }

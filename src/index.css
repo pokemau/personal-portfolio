@@ -7,6 +7,12 @@
   outline: 1px black;
   /* outline-style: dotted; */
 }
+@media all and (max-width: 420px) {
+  * {
+    /* outline-style: dotted; */
+  }
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: rgb(255, 255, 255);

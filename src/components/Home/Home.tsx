@@ -8,13 +8,13 @@ import Techstack from "../Techstack/Techstack";
 
 const Home = () => {
   return (
-    <div className="home-cont" id="about">
+    <div className="home-cont">
       <div className="all-info-cont">
         <img className="my-img" src={pic} alt="maurice pic" />
         <div className="intro-cont">
           <div className="intro-title">
-            <h2>Web Developer</h2>
-            <img src={handEmoji} alt="Waving hand emoji" />
+            <h2>Front End Web Developer</h2>
+            {/* <img src={handEmoji} alt="Waving hand emoji" /> */}
           </div>
           <h2 className="intro-desc">
             Hi, I am Maurice and I am a web developer from the Philippines.
