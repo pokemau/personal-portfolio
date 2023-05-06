@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { useEffect, useRef, useState, MouseEvent } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // images
 import hamburger from "../../assets/hamburger.png";
@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 570) {
       setIsMobile(true);
     }
     const handleResize = () => {
@@ -48,7 +48,15 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="nav-logo">MT</h1>
+      <Link
+        onClick={hideMobileNav}
+        to="home"
+        smooth={true}
+        offset={-50}
+        duration={200}
+      >
+        <h1 className="nav-logo">MT</h1>
+      </Link>
       <div
         ref={navLinkRef}
         className={`${isMobile ? "mobile-nav" : "nav-links"}`}

@@ -66,6 +66,9 @@
   .my-img {
     margin-right: 0;
   }
+  .intro-title h2 {
+    margin: auto;
+  }
   .intro-desc {
     margin-top: 0;
   }

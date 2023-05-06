@@ -1,7 +1,8 @@
 .contact-container {
   background-color: rgb(34, 104, 211);
+  max-width: 138rem;
   width: 90vw;
-  margin: auto;
+  margin: 4rem auto;
   margin-bottom: 1em;
   color: rgb(243, 234, 234);
   padding: 2em;
@@ -81,5 +82,11 @@
   .message-cont {
     width: 100%;
     margin: 0;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .contact-container {
+    margin: 2rem auto;
   }
 }
